@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+$family: 'Noto Sans';
+
+@mixin flex($dir, $jus: flex-start, $ali: flex-start, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jus;
+  align-items: $ali;
+  flex-wrap: $wrap;
+}
+
+$body-bg: #E0E0E0;
+
+.ticket {
+  width: 380px;
+  height: 160px;
+  transition: all 0.4s ease;
+  position: absolute;
+}
+
+.ornament {
+  $cut-size: 22px;
+  background: #fbad18;
+  width: 65%;
+  height: inherit;
+  position: absolute;
+  border: 1px solid #FFA726;
+  border-right: none;
+  transition: all 0.4s ease;
+  z-index: 1;
+  &__cut {
+    background: $body-bg;
+    width: $cut-size;
+    height: $cut-size * 0.55;
+    position: absolute;
+    left: 10%;
+    z-index: 5;
+    &--1 {
+      top: -1%;
+      border-radius: 0 0 100px 100px;
+    }
+    &--2 {
+      bottom: -1%;
+      border-radius: 100px 100px 0 0;
+    }
+  }
+  &__tail {
+    background: #F57C00;
+    width: 12px;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.illustration {
+  background: white;
+  width: 35%;
+  height: inherit;
+  position: absolute;
+  right: 0;
+  transition: all 0.4s ease;
+  border: 1px inset rgba(0, 0, 0, 0.08);
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  overflow: hidden;
+}
+
+.new-label {
+  background: #FFA726;
+  width: 50px;
+  text-align: center;
+  padding: 0.2em;
+  border-radius: 8px;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: white;
+  font-size: 13px;
+}
+
+.spikes {
+  @include flex(column);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  margin-left: -12px;
+}
+
+.spike {
+  background: #FFA726;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+}
+
+.content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .link-join {
+    background: white;
+    border-radius: 4px;
+    padding: 0.3em 1em;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFA726;
+    text-decoration: none;
+    &:focus, &:active, &:hover {
+      color: #FFA726;
+      text-decoration: none;
+    }
+  }
+}

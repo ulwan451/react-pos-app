@@ -1,0 +1,41 @@
+/********* SCROLL WEBSITE ********/
+
+.tableProduk::-webkit-scrollbar-track {
+	background-color: rgb(255, 255, 255);
+}
+
+ .tableProduk::-webkit-scrollbar {
+    width: 0px;
+	background-color: rgb(255, 255, 255);
+}
+
+ .tableProduk::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #d0d3d4;
+}
+
+
+/********* SCROLL WEBSITE ********/
+
+.shadow-table {
+    padding: 1em;
+    border-radius: .5em;
+    box-shadow:
+      -12px -12px 12px 0 rgb(240, 238, 238),
+      12px 12px 12px 0 rgba(200, 200, 200, 0.493);
+  }
+.tableProduk {
+    padding: 10px;
+    max-height: 75vh;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: inset 3px 3px 10px hsla(0, 0%, 0%, 0.185);
+}
+
+.inputBayar {
+    width: 70px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #a1a1a1;
+    transition: 0.5s;
+}

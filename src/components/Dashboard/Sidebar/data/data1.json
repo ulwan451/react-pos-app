@@ -1,0 +1,63 @@
+{
+    "Admin": [
+            {
+            "link": "/admin/beranda",
+            "icon": "fas fa-home",
+            "name": "BERANDA"
+            },
+            {
+            "link": "/admin/userprofile",
+            "icon": "fas fa-cog",
+            "name": "SETTING"
+            }
+         ],
+    "Toko": [
+            {
+            "link": "/dashboard/beranda",
+            "icon": "fas fa-home",
+            "name": "BERANDA"
+            },
+            {
+            "link": "/dashboard/pelanggan",
+            "icon": "fas fa-user-circle",
+            "name": "KASIR TOKO"
+            },
+            {
+            "link": "/dashboard/kategori",
+            "icon": "fas fa-cubes",
+            "name": "KATEGORI"
+            },
+            {
+            "link": "/dashboard/produk",
+            "icon": "fas fa-certificate",
+            "name": "PRODUK"
+            },
+            {
+            "link": "/dashboard/riwayat",
+            "icon": "fas fa-truck-moving",
+            "name": "SUPPLIER"
+            },
+            {
+            "link": "/dashboard/userprofile",
+            "icon": "fas fa-cog",
+            "name": "SETTING"
+            }
+    ],
+    "Kasir": [
+            {
+            "link": "/kasir/beranda",
+            "icon": "fas fa-home",
+            "name": "BERANDA"
+            },
+            {
+            "link": "/kasir/transaksi",
+            "icon": "fas fa-balance-scale",
+            "name": "TRANSAKSI"
+            },
+            {
+            "link": "/kasir/userprofile",
+            "icon": "fas fa-cog",
+            "name": "SETTING"
+            }
+    ]
+}

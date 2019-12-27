@@ -1,0 +1,98 @@
+.navbar {
+    background: #fff;
+    width: 100%;
+    padding: 40px;
+    ul {
+        position: relative;
+        right: -50px;
+        .contact {
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+        li {
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: rgb(66, 64, 64);
+            list-style-type: none;
+            padding: 20px;
+            display: inline;
+            a {
+                text-decoration: none;
+                color: #1559c5;
+                padding-bottom: 3px;
+                &:hover {
+                    border: none;
+                }
+            }
+            .ico-land {
+                cursor: pointer;
+                font-size: 30px;
+                transform: rotate(181deg);
+                color:  rgb(240, 97, 130);
+                &:hover {
+                    color: #1559c5;
+                }
+            }
+            .nav-aktif {
+                border-bottom: 2px solid  rgb(240, 97, 130);
+            }
+        }
+    }
+    .toggle {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+   .navbar {
+       padding: 25px;
+       .button-nav {
+           position: relative;
+           bottom: -10px;
+           left: -70px;
+       }
+       .awal-status {
+           a {
+               display: none;
+           }
+           li {
+               display: none;
+           }
+        }
+               .toggle {
+                   display: block;
+                   cursor: pointer;
+               }
+            
+       .show-status {
+        position: fixed;
+        margin-top: 75px;
+        left: -0px;
+        width: 100%;
+        transition: 1s;
+       background: #fff;
+        box-shadow: 0px 5px 11px rgb(183, 182, 182);
+        padding: 20px;
+        a {
+            padding-left: 10px;
+            color: #000;
+        }
+       }
+            .toggle {
+                opacity: 1;
+                cursor: pointer;
+                position: relative;
+                .fade {
+                    opacity: 1;
+                    animation: fadein 1s;
+                }
+            }
+   }
+}
+
+@keyframes fadein {
+    0% {opacity: 0; transform: scaleY(-1);}
+    100% {opacity: 1}
+}

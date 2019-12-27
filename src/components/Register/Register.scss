@@ -1,0 +1,90 @@
+
+.register {
+        background: #fff;
+        border: 1px solid rgb(204, 203, 203);
+        padding: 30px 100px;
+        margin: auto;
+        position: absolute;
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        text-align: center;
+        border-radius: 8px;
+        .textlogin {
+            color: #000000;
+            position: relative;
+            padding-top: 40px;
+            font-weight: 100;
+            z-index: -3;
+        }
+      
+        .form {
+            .button {
+                padding: 5px 25px 5px 25px;
+                border: none;
+                border-radius: 5px;
+                width: 100%;
+                background: #2875ce;
+                color: #fff;
+                &:hover {
+                    background:  #0056b3;
+                }
+            }
+            .iuser {
+                position: relative;
+                bottom: -38px;
+                left: -7px;
+                color: #696767;
+            }
+            .ikey {
+                position: relative;
+                bottom: -38px;
+                left: -7px;
+                color: #696767;
+            }
+        }
+    }
+    .validate {
+            font-weight: lighter;
+            border-radius: 5px;
+            font-size: 15px;
+            background: #fcd5d5;
+            color: #5f2f2f;
+            position: relative;
+    }
+
+.lodings {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #3390fa;
+}
+@media screen and (max-width: 600px) {
+        .register {
+            border: none;
+            left: 53%;
+            width: 112%;
+            .form {
+                .logoss {
+                    margin-top: 25px;
+                }
+             .iuser {
+                    position: relative;
+                    left: -77px;
+                    bottom: -60px;
+             }
+             .ikey {
+                position: relative;
+                left: -77px;
+                bottom: -60px;
+             }
+             .link {
+                 margin-top: -35px;
+             }
+         }
+         .validate {
+             width: 100px;
+             right: -35px;
+         }
+        }
+    }
