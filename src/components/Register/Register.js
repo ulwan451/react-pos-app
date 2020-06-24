@@ -36,7 +36,7 @@ const Register = ({
                 />
               </Link>
               <h4 className="textlogin">SIGN UP</h4>
-              <p style={{ color: "#fb3c69" }}>Buat akun toko anda!</p>
+              <p className="text-secondary">Buat akun toko anda!</p>
               <div className="row">
                 <div className="col-md-6">
                   <Input

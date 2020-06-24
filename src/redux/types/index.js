@@ -1,0 +1,7 @@
+export const MODAL_OPEN = "MODAL_OPEN";
+export const TAMBAH_KATEGORI = "TAMBAH_KATEGORI";
+export const EDIT_KATEGORI = "EDIT_KATEGORI";
+export const DELETE_KATEGORI = "DELETE_KATEGORI";
+export const GET_KATEGORI = "GET_KATEGORI";
+
+export const GET_PRODUK = "GET_PRODUK";

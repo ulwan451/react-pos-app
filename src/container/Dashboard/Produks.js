@@ -164,27 +164,27 @@ export default class Produks extends Component {
   render() {
     return (
       <>
-        <Produk
-          posts={this.handlePost}
-          datas={this.state.data}
-          image={this.state.image}
-          datak={this.state.datak}
-          stock={this.state.stock}
-          remove={this.handleRemove}
-          update={this.handleUpdate}
-          content={this.props.content}
-          store={this.state.user.id_store}
-          harga_beli={this.state.harga_beli}
-          harga_jual={this.state.harga_jual}
-          kode_barang={this.state.kode_barang}
-          nama_barang={this.state.nama_barang}
-          select={this.state.kategori_id}
-          handleChange={this.handleChange}
-          handleImage={this.handleChangeImg}
-          open={this.open}
-          close={this.open}
-          opens={this.state.open}
-        />
+          <Produk
+            posts={this.handlePost}
+            datas={this.state.data}
+            image={this.state.image}
+            datak={this.state.datak}
+            stock={this.state.stock}
+            remove={this.handleRemove}
+            update={this.handleUpdate}
+            content={this.props.content}
+            store={this.state.user.id_store}
+            harga_beli={this.state.harga_beli}
+            harga_jual={this.state.harga_jual}
+            kode_barang={this.state.kode_barang}
+            nama_barang={this.state.nama_barang}
+            select={this.state.kategori_id}
+            handleChange={this.handleChange}
+            handleImage={this.handleChangeImg}
+            open={this.open}
+            close={this.open}
+            opens={this.state.open}
+          />
       </>
     );
   }

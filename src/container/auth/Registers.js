@@ -17,11 +17,9 @@ export default class Registers extends Component {
   }
 
   validate = () => {
-    if (!this.state.passwordEr) {
       this.setState({
         regisErr: "Register gagal tersimpan!"
       });
-    }
   };
 
   handlechange = e => {

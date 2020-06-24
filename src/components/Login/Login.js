@@ -29,8 +29,8 @@ const Login = ({
               <div className="teks">
                 <h4 className="textlogin">LOGIN</h4>
               </div>
-              <p className="about-text" style={{ color: "#fb3c69" }}>
-                Anda bisa login sebagai
+              <p className="about-text text-secondary">
+                Anda bisa login sebagai Admin,
                 <br /> Pemilik toko atau Kasir!
               </p>
               <Input

@@ -83,13 +83,16 @@ export default class Logins extends Component {
     const kasir = this.state.kasir;
     const toko = this.state.toko;
 
-    if (user === admin) {
-      return <Redirect to="/admin/beranda" />;
-    } else if (user === toko) {
-      return <Redirect to="/dashboard/beranda" />;
-    } else if (user === kasir) {
-      return <Redirect to="/kasir/beranda" />;
-    } else if (isLoading) {
+    // if (user === admin) {
+    //   return <Redirect to="/admin/beranda" />;
+    // } else if (user === toko) {
+    //   return <Redirect to="/dashboard/beranda" />;
+    // } else if (user === kasir) {
+    //   return <Redirect to="/kasir/beranda" />;
+    // } else if (isLoading) {
+    //   return <Loading />;
+    // }
+    if(isLoading) {
       return <Loading />;
     }
     return (

@@ -1,272 +1,172 @@
+$red: #48a0ff;
 
-body{
-  margin: 0;
-  padding: 0;
-}
-header{
-  display: flex;
-  flex-direction: row;
-  margin: 20px 10%;
-  position: relative;
-  .logos{
-    display: flex;
-    align-items: center;
-    z-index: 1;
-    img{
-      width: 35px;
-      margin-right: 5px;
-    }
-  }
-.ul-navbar{
-    margin-top: 15px;
-    list-style: none;
-    display: flex;
-    margin-left: 5%;
-    width: 30%;
-    justify-content: space-around;
-    font-weight: 700;
-    color: #878787;
-    li{
-      margin:0 5px;
-    }
-  }
-  &:after{
-    content: '';
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+.landingpage {
+  font-family: 'Poppins', sans-serif;
+
+  .wrapper {
+    background-color: white;
+    width: 310px;
+    height: 385px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgb(185, 185, 185);
     position: absolute;
-    top: -200px;
-    left: -250px;
-    z-index: -1;
-    width: 300px;
-    height: 300px;
-    border-radius: 300px;
-    border: 20px solid #f5f5f5;
-  }
-}
+    right: 15%;
+    top: 130px;
+    z-index: 50;
 
-main{
-  display: flex;
-  align-items: center;
-  margin-left: 10%;
-}
+    .right_side{
+        > div{
+          &:before{
+            content: '';
+            position: absolute;
+            top: 330px;
+            left: -45px;
+            width: 100px;
+            height: 100px;
+            border-radius: 80px;
+            border: 40px solid #c7e4ffaf;
+          }
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          top: -50px;
+          right: -55px;
+          z-index: -1;
+          width: 150px;
+          height: 150px;
+          background-image: radial-gradient(circle at 3px 3px, #a4d3f3 3px, transparent 0);
+         background-size: 20px 20px;
+        }
+      }
+      
 
-.left_side{
-  width: 40%;
-  h1{
-    font-weight: 700;
-    font-size: 50px;
-    background: #4f98ca;
-  background: linear-gradient(to right, #4f98ca, #4f98ca, #4f98ca);
-  -webkit-background-clip: text;
-  color: transparent;
-  }
-  h4{
-    width: 80%;
-    font-size: 0.9em;
-    font-weight: 500;
-    line-height: 22px;
-    color: #878787;
-  }
-  button{
-    padding: 15px 30px;
-    margin: 20px 10px 0 0;
-  }
-  .social{
-    margin: 60px 0 0;
-    button{
-      padding: 10px;
-    }
-  }
-}
-
-p.show_more{
-    color: #878787;
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
-    i{
-      margin-left: 15px;
-      font-size: 40px;
-      color: #d3d3d3;
-      -webkit-text-stroke: 2px white;
-    }
-  }
-
-.main_btn{
-  border: none;
-  outline:none;
-  cursor: pointer;
-  position: relative;
-  background: #4f98ca;
-  background: -webkit-linear-gradient(to right, #4f98ca, #4f98ca, #4f98ca);
-  background: linear-gradient(to right, #4f98ca, #4f98ca, #4f98ca);
-  letter-spacing: 1px;
-  color: #fff;
-  border-radius: 30px;
-  a {
-    text-decoration: none;
-    color: white;
-
-  }
-  &.second{
-    background: #4f98ca;
-  }
-}
-
-.outline_btn{
-  border: 2px solid #4f98ca;
-  outline:none;
-  cursor: pointer;
-  background: none;
-  color: #4f98ca;
-  position: relative;
-  letter-spacing: 1px;
-  border-radius: 30px;
-}
-
-.right_side{
-  width: 55%;
-  position: relative;
-  > div{
-    background-image: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    float: right;
-    width: 65%;
-    height: 62vh;
-    &:after{
-      content: '';
-      width: 70%;
-      height: 92vh;
+    .header{
+      width: 100%;
       position: absolute;
-      z-index: -1;
-      left: 5%;
-      top: -122px;
-      background: #4f98ca;
-  background: -webkit-linear-gradient(to right top, #4f98ca, #4f98ca, #4f98ca);
-  background: linear-gradient(to right top, #4f98ca, #4f98ca, #4f98ca);
-    }
-    &:before{
-      content: '';
-      position: absolute;
-      top: 260px;
-      left: -100px;
-      width: 50px;
-      height: 50px;
-      border-radius: 80px;
-      border: 40px solid #c7f2ff;
-    }
   }
-  &:after{
-    content: '';
-    position: absolute;
-    top: -50px;
-    right: -55px;
-    z-index: -1;
-    width: 150px;
-    height: 150px;
-    background-image: radial-gradient(circle at 3px 3px, #4f98ca 3px, transparent 0);
-  background-size: 20px 20px;
-  }
-}
 
-section{
-  margin: 150px 10%;
-  .item{
-    -webkit-box-shadow: 5px 5px 20px -6px rgba(0,0,0,0.25);
--moz-box-shadow: 5px 5px 20px -6px rgba(0,0,0,0.25);
-box-shadow: 5px 5px 20px -6px rgba(0,0,0,0.25);
+  section {
+    margin-top: 150px;
+    margin-left: 25px;
     margin-right: 25px;
-    padding: 40px 30px;
-    button{
-      padding: 20px;
-      border-radius: 40px;
-      font-size: 20px;
-      -webkit-box-shadow: 0px 0px 30px 0px rgba(83, 180, 236, 0.9);
--moz-box-shadow: 0px 0px 30px 0px rgba(83, 180, 236, 0.9);
-box-shadow: 0px 0px 30px 0px rgba(83, 180, 236, 0.9);
-    }
-    h5{
-      font-weight: 700;
-      font-size: 15px;
-      position: relative;
-      margin-bottom: 50px;
-      &::after{
-        content: '';
-      width: 60px;
-      height: 3px;
-      position: absolute;
-      left: 0;
-      bottom: -25px;
-      background: #4f98ca;
-  background: -webkit-linear-gradient(to right top, #4f98ca, #4f98ca, #4f98ca);
-  background: linear-gradient(to right top, #4f98ca, #4f98ca, #4f98ca);
-      }
-    }
-    p{
-      color: #878787;
-      line-height: 25px;
-    }
-  }
-  .text_content{
-    margin-left: 30px;
-    h2{
-      font-weight: 700;
-      font-size: 35px;
-    }
-    p{
-      width: 80%;
-      color: #878787;
-      line-height: 25px;
-    }
-    button{
-      padding: 10px;
-    }
-    button:first-of-type{
-      padding: 15px 30px;
-      margin: 20px 10px 0 0;
-    }
-    i{
-      font-size: 20px;
-      margin-left: 4px;
-      color: transparent;
-     -webkit-text-stroke-width: 1.8px;
-     -webkit-text-stroke-color: #4f98ca;
-    }
-  }
+    position: relative;
 }
 
-@media only screen and (max-width: 1000px){
-  main{
-    flex-direction: column;
-  }
-  .left_side, .right_side{
-    width: 100%;
-  }
-  .left_side{
-    .social{
-      margin: 20px 0 40px;
-    }
-  }
-  .right_side{
-    >div{
-      float: none;
-      margin: 0 auto;
-    }
-    &:after{
-      right: 55px;
-    }
-  }
-  p.show_more{
-    margin-top: 65px;
-  }
-  .right_side{
-    div{
-      width: 90%;
-      &:after{
-        top: -12px;
-        height: 70vh;
+    .button-daftar {
+      color: #fff;
+      cursor: pointer;
+      line-height: 45px;
+      max-width: 160px; 
+      text-transform: uppercase;
+      width: 100%;
+      background: lighten($red, 3%);  
+      border: 1px solid darken($red, 4%);
+      box-shadow: 0px 2px 0 darken($red, 5%), 2px 4px 6px darken($red, 2%);
+      font-weight: 900;
+      letter-spacing: 1px;
+      border-radius: 8px;
+      outline: none;
+      border: none;
+      &:hover {
+        background: darken($red, 1.5%);
+        border: 1px solid rgba(#000, .05);
+        box-shadow: 1px 1px 2px rgba(#fff, .2);
+        color: lighten($red, 18%); 
+        text-shadow: -1px -1px 0 darken($red, 9.5%);
       }
     }
   }
+
+  .left {
+      .person {
+          z-index: 5;
+          position: fixed;
+          height: 40%;
+          top: 45%;
+          left: 7%;
+      }
+
+      .screen1 {
+          top: 15%;
+          left: 23%;
+          z-index: 2;
+          height: 30%;
+          position: fixed;
+          animation: screen1 3s ease-in-out infinite;
+      }
+
+      @keyframes screen1 {
+          0%{
+              top: 15%;
+          }
+          50%{
+              top: 13%;
+          }
+          100% {
+              top: 15%;
+          }
+      }
+
+      .screen2 {
+          top: 20%;
+          left: 13%;
+          z-index: 2;
+          height: 15%;
+          position: fixed;
+          animation: screen2 2.5s ease-in-out infinite;
+      }
+
+      @keyframes screen2 {
+          0%{
+              top: 25%;
+          }
+          50%{
+              top: 28%;
+          }
+          100% {
+              top: 25%;
+          }
+      }
+
+      .screen3 {
+          top: 40%;
+          left: 25%;
+          z-index: 2;
+          height: 25%;
+          position: fixed;
+          animation: screen3 2s ease-in-out infinite;
+      }
+
+      @keyframes screen3 {
+          0%{
+              top: 43%;
+          }
+          50%{
+              top: 46%;
+          }
+          100% {
+              top: 43%;
+          }
+      }
+
+  }
+
+}
+
+@media (max-width: 700px) {
+  .landingpage {
+      display: flex;
+      justify-content: center;
+      .wrapper {
+          position: relative;
+          left: auto;
+          right: auto;
+      }
+  }
+
+
 }
