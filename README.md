@@ -1,4 +1,4 @@
-![alt text](https://i.pinimg.com/originals/e4/cd/ed/e4cded865191591c0ca5f250fda3c8a9.png "Logo Title Text 1")
+![alt text](https://i.pinimg.com/originals/49/17/ad/4917ad0bbe06889098480fe415c6a9ee.png "Logo Title Text 1")
 
 ![alt text](https://i.pinimg.com/originals/7c/44/d6/7c44d67c99467e1dc157dc5d954e2891.png "Logo Title Text 1")
 
